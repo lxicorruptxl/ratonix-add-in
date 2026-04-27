@@ -11,11 +11,10 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Ratonix AI"/>
   <Description DefaultValue="AI communication intelligence for Outlook compose and reply workflows."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://ratonix.ai/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://ratonix.ai/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://ratonix.ai"/>
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
     <AppDomain>https://ratonix.ai</AppDomain>
   </AppDomains>
   <Hosts>
@@ -29,13 +28,13 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/index.html"/>
+        <SourceLocation DefaultValue="https://ratonix.ai/index.html"/>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/index.html"/>
+        <SourceLocation DefaultValue="https://ratonix.ai/index.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
@@ -104,13 +103,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16" DefaultValue="https://ratonix.ai/assets/icon-16.png"/>
+        <bt:Image id="Icon.32" DefaultValue="https://ratonix.ai/assets/icon-32.png"/>
+        <bt:Image id="Icon.80" DefaultValue="https://ratonix.ai/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/index.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://ratonix.ai/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://ratonix.ai/index.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Group.Label" DefaultValue="Ratonix"/>

@@ -36,7 +36,7 @@ Run the local task pane:
 npm run dev
 ```
 
-The manifest points to `https://localhost:3000`. For local sideloading, serve Vite over HTTPS or update the manifest URLs to match your dev tunnel.
+The checked-in manifest points to `https://ratonix.ai` for production use. For local sideloading, temporarily change the manifest URLs to your HTTPS dev tunnel or a local Office add-in certificate setup.
 
 Build and typecheck:
 
@@ -85,6 +85,28 @@ Both endpoints receive:
   }
 }
 ```
+
+## Vercel deployment and Microsoft Store submission
+
+Deploy this project to the Ratonix Vercel project that serves `https://ratonix.ai`:
+
+1. Configure the Vercel project root to this repository.
+2. Use `npm run build` as the build command.
+3. Use `dist` as the output directory.
+4. Add `VITE_RATONIX_API_ENDPOINT` and `VITE_RATONIX_API_KEY` in Vercel if the hosted adaptive API is ready.
+5. Confirm these URLs load over HTTPS after deploy:
+   - `https://ratonix.ai/index.html`
+   - `https://ratonix.ai/commands.html`
+   - `https://ratonix.ai/assets/icon-64.png`
+   - `https://ratonix.ai/assets/icon-128.png`
+
+Before submitting to Microsoft Partner Center:
+
+```bash
+npm run validate:manifest
+```
+
+Then upload `manifest.xml` in Partner Center as a Microsoft 365 / Office Add-in offer. Microsoft Store validation requires the production URLs in the manifest to be public HTTPS URLs.
 
 Both endpoints should return:
 
