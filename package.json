@@ -1,0 +1,21 @@
+{
+  "name": "ratonix-outlook-add-in",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Outlook add-in surface for Ratonix AI communication intelligence.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "validate:manifest": "office-addin-manifest validate manifest.xml"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/office-js": "latest",
+    "office-addin-manifest": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
