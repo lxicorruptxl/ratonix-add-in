@@ -28,11 +28,13 @@ const state: AppState = {
   error: null,
 };
 
-const root = document.querySelector<HTMLDivElement>("#app");
+const appRoot = document.querySelector<HTMLDivElement>("#app");
 
-if (!root) {
+if (!appRoot) {
   throw new Error("App root was not found.");
 }
+
+const root = appRoot;
 
 Office.onReady(async () => {
   state.message = await getCurrentMessageSnapshot();

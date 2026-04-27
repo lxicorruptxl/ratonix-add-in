@@ -50,6 +50,9 @@ export function rememberInteraction(input: {
       createdAt: now,
       tone: input.tone,
       mode: input.mode,
+      subject: input.message.subject,
+      sourcePreview: input.message.bodyText.slice(0, 240),
+      suggestionPreview: input.suggestion.text.slice(0, 240),
     },
     ...memory.interactions,
   ].slice(0, MAX_INTERACTIONS);

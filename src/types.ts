@@ -27,9 +27,6 @@ export interface StyleMemory {
     tone: Tone;
     mode: DraftKind;
     createdAt: string;
-    subject: string;
-    sourcePreview: string;
-    suggestionPreview: string;
   }>;
   keyRelationships: string[];
   relationships: Record<string, RelationshipMemory>;

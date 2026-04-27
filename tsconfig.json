@@ -10,7 +10,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
+    "types": ["office-js", "vite/client"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true
